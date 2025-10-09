@@ -101,7 +101,7 @@ class TextMapSelector:
         lines = text_map.splitlines()
         map_dict = {}
         for idx, line in enumerate(lines):
-            split_line = line.split(":")
+            split_line = line.split(":", maxsplit=1)
             tmp_key = split_line[0].strip()
             tmp_value = split_line[1].strip() if len(split_line) > 1 else ""
             map_dict[tmp_key] = {
