@@ -23,7 +23,7 @@ class ToString:
     OUTPUT_NODE = True
     CATEGORY = "utils/CustomSelector"
 
-    def to_string(self, number: int) -> Tuple[int]:
+    def to_string(self, number: int) -> Tuple[str]:
         """Converts a number to a string
 
         Args:

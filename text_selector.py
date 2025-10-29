@@ -97,7 +97,7 @@ class TextMapSelector:
     OUTPUT_NODE = True
     CATEGORY = "utils/CustomSelector"
 
-    def select_text(self, text_map: str, key: str) -> Tuple[str, int]:
+    def select_text(self, text_map: str, key: str) -> Tuple[str, str, int]:
         lines = text_map.splitlines()
         map_dict = {}
         for idx, line in enumerate(lines):
